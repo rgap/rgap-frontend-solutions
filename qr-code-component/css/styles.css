@@ -19,17 +19,17 @@ body {
     width: 20%;
     text-align: center;
 }
-.img {
+.box__img {
     width: 100%;
     border-radius: 16px;
 }
-.title {
+.box__title {
     margin-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
     color: hsl(218, 44%, 22%);
 }
-.description {
+.box__description {
     margin-top: 15px;
     margin-bottom: 20px;
     color: hsl(220, 15%, 55%);
