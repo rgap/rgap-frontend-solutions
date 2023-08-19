@@ -37,10 +37,43 @@ body {
   width: 70%;
 }
 
-.container__box div:first-child {
+.container__box > div:first-child {
   width: 25%;
   background: url("../assets/images/bg-sidebar-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.step__container {
+  gap: 20px;
+  /* align vertically */
+  align-items: center;
+}
+.step__circle {
+  border: solid #fff 1px;
+  padding: 9px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.step__circle:hover {
+  color: #000;
+  background-color: hsl(206, 94%, 87%);
+}
+.step__title {
+  color: hsl(217, 100%, 97%);
+  font-size: 13px;
+}
+.step__description {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
