@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <!-- ./ por compatibilidad -->
     <link
       rel="icon"
       type="image/png"
@@ -11,16 +12,87 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Loopstudios landing page</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Outfit:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    About Careers Events Products Support Immersive experiences that deliver The
-    leader in interactive VR Founded in 2011, Loopstudios has been producing
-    world-class virtual reality projects for some of the best companies around
-    the globe. Our award-winning creations have transformed businesses through
-    digital experiences that bind to their brand. Our creations See all Deep
-    earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
-    The curiosity Make it fisheye About Careers Events Products Support © 2021
-    Loopstudios. All rights reserved.
+    <section class="principal__section">
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="logo" />
+        <ul class="nav__list">
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div>
+          <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+        </div>
+      </div>
+    </section>
+    <section class="article__section">
+      <div>
+        <img src="./images/desktop/image-interactive.jpg" alt="" />
+      </div>
+      <div class="article__container">
+        <h2>THE LEADER IN INTERACTIVE VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <!-- <div class="gallery__title">
+        <h2>OUR CREATIONS</h2>
+        <button>SEE ALL</button>
+      </div> -->
+      <div class="earth gallery__images">
+        <!-- <img src="./images/desktop/image-deep-earth.jpg" alt="" /> -->
+        <h3>DEEP EARTH</h3>
+      </div>
+      <div class="arcade gallery__images">
+        <h3>NIGHT ARCADE</h3>
+      </div>
+      <div class="soccer gallery__images">
+        <h3>SOCCER TEAM VR</h3>
+      </div>
+      <div class="race gallery__images">
+        <h3>THE GRID</h3>
+      </div>
+      <div class="upabove gallery__images">
+        <h3>FROM UP ABOVE VR</h3>
+      </div>
+      <div class="borealis gallery__images">
+        <h3>POCKET BOREALIS</h3>
+      </div>
+      <div class="curiosity gallery__images">
+        <h3>THE CURIOSITY</h3>
+      </div>
+      <div class="fisheye gallery__images">
+        <h3>MAKE IT FISHEYE</h3>
+      </div>
+    </section>
+
+    <!--   Deep earth Night arcade Soccer team VR The grid From
+    up above VR Pocket borealis The curiosity Make it fisheye About Careers
+    Events Products Support © 2021 Loopstudios. All rights reserved. -->
   </body>
 </html>

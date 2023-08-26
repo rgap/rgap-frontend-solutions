@@ -1,0 +1,121 @@
+/* 
+### Primary
+
+- White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 0%)
+- Dark Gray: hsl(0, 0%, 55%)
+- Very Dark Gray: hsl(0, 0%, 41%)
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+.principal__section {
+  background: url("../images/desktop/image-hero.jpg");
+  background-image: no-repeat;
+  background-size: cover;
+  padding: 60px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  color: #fff;
+}
+.hero > div {
+  border: solid #fff;
+  padding: 20px;
+  width: 35%;
+  margin-top: 100px;
+  /* for keeping the text inside the div */
+  word-wrap: break-word;
+}
+.hero > div > h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 60px;
+  /* font-size: 4vw; */
+}
+.article__section {
+  display: flex;
+  padding: 60px;
+  justify-content: center;
+}
+.article__container {
+  /* border: solid; */
+  /* place it at the bottom */
+  align-self: end;
+  width: 25%;
+  margin-left: -150px;
+  background-color: #fff;
+  padding: 60px 60px 0 60px;
+}
+.article__container h2 {
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 40px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 70vh 70vh;
+  padding: 60px;
+  /* text-align: center; */
+}
+/* .gallery__images {
+  position: relative;
+}
+.gallery__images h3 {
+  position: absolute;
+  border: solid;
+  bottom: 20px;
+  color: #fff;
+} */
+.earth {
+  background: url("../images/desktop/image-deep-earth.jpg");
+}
+.arcade {
+  background: url("../images/desktop/image-night-arcade.jpg");
+}
+.soccer {
+  background: url("../images/desktop/image-soccer-team.jpg");
+}
+.race {
+  background: url("../images/desktop/image-grid.jpg");
+}
+.upabove {
+  background: url("../images/desktop/image-from-above.jpg");
+}
+.borealis {
+  background: url("../images/desktop/image-pocket-borealis.jpg");
+}
+.curiosity {
+  background: url("../images/desktop/image-curiosity.jpg");
+}
+.fisheye {
+  background: url("../images/desktop/image-fisheye.jpg");
+}
+.gallery__images {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 50vh;
+    width: 25%; */
+  color: #fff;
+  display: flex;
+  margin: 20px;
+  align-items: end;
+}
+.gallery div h3 {
+  padding: 20px;
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  width: 20%;
+}
