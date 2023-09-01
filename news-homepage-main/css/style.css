@@ -1,0 +1,57 @@
+/*
+### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%)
+*/
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.bg-primary {
+  /* important or change bootstrap css with sass  */
+  background-color: hsl(240, 100%, 5%) !important;
+}
+
+.text-principal {
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.rounded-none {
+  border-radius: 0 !important;
+}
+
+.letter-3 {
+  letter-spacing: 3px;
+}
+
+.width100 {
+  width: 100%;
+}
