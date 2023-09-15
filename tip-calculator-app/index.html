@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main class="h-screen bg-green-100">
+      <div class="h-[15vh] py-10 flex justify-center">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="bg-white h-[85vh] rounded-t-3xl p-6">
+        <h2 class="font-semibold text-green-900">Bill</h2>
+        <div
+          id="container-bill"
+          class="border flex items-center mt-3 p-3 rounded-md bg-green-100/50"
+        >
+          <img src="./images/icon-dollar.svg" alt="" />
+          <!-- outline-none to remove the blue input border when focused -->
+          <input
+            id="input-bill"
+            type="text"
+            class="w-full text-right outline-none bg-transparent text-green-900 text-xl font-semibold"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
