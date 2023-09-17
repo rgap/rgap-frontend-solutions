@@ -17,18 +17,24 @@ function removeGreenLight(element) {
 function setButtonSelect(element) {
   const spanValue = element.children[0].textContent;
   const spanCurrentValue = currentSelect?.children[0].textContent;
+  const inputCustom = document.querySelector("input[name='custom']");
+
+  if (inputCustom?.value) inputCustom.value = "" 
 
   if (currentSelect) removeGreenLight(currentSelect);
 
   if (spanValue === spanCurrentValue) {
-    removeGreenLight(currentSelect);
-    currentSelect = null;
+    removeGreenLight(currentSelect)
+    currentSelect = null
+    valuePercentage = 0
   } else {
     element.classList.remove("bg-[#00494d]");
     element.classList.add("bg-green-200");
     currentSelect = element;
+    valuePercentage = Number(spanValue.replace("%", ""))
   }
 }
+
 
 function renderItemPercentage(value) {
   return `<div
@@ -67,13 +73,26 @@ function generatePercentageList() {
 generatePercentageList();
 
 containerInputBill.innerHTML = renderInput(
-  "./assets/icon-dollar.svg",
+  "./images/icon-dollar.svg",
   "0.0",
   "input-bill"
 );
 
 containerInputPeople.innerHTML = renderInput(
-  "./assets/icon-person.svg",
+  "./images/icon-person.svg",
   "0",
   "input-people"
 );
+
+const inputCustom = document.querySelector("input[name='custom']");
+// console.log(inputCustom)
+
+inputCustom.onkeyup = function (event) {
+  valuePercentage = Number(event.target.value)
+  if (currentSelect) {
+    removeGreenLight(currentSelect)
+    currentSelect = null
+  }
+}
+
+// tarea: get number y al darle reset, hacer calculo
